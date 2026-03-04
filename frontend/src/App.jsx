@@ -1,0 +1,16 @@
+import { Routes, Route } from "react-router-dom";
+import Login from "./pages/login";
+import AdminDashboard from "./pages/AdminDashboard";
+import EmployeeDashboard from "./pages/EmployeeDashboard";
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<Login />} />
+      <Route path="/admin" element={<AdminDashboard />} />
+      <Route path="/employee" element={<EmployeeDashboard />} />
+    </Routes>
+  );
+}
+
+export default App;
