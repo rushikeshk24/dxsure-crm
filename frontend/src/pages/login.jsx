@@ -18,7 +18,7 @@ function Login() {
     const trimmedPassword = password?.trim?.() ?? "";
 
     if (!trimmedEmail || !trimmedPassword) {
-      setError("Email and password are required");
+      setError("Email and Password are required");
       return;
     }
 
